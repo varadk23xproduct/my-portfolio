@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Varad Koopar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc70;
+        }
+        .container {
+            margin-top: 80px;
+        }
+        .blog-card {
+            background: #1c1c1c;
+            color: white;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .blog-card:hover {
+            transform: scale(1.05);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .blog-card .card-body {
+            padding: 20px;
+        }
+        .blog-card .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .blog-card .card-text {
+            font-size: 14px;
+            color: #ccc;
+        }
+        .btn-custom {
+            position: relative;
+            background: none;
+            border: 2px solid #8E2DE2;
+            color: white;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-custom:hover {
+            color: white;
+            border-color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html#about">About</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#more-work">More Work</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <section class="container mt-5 pb-5">
+        <h2 class="text-center mb-5">Latest Blog Posts</h2>
+        <div class="row gy-4">
+            
+            <!-- Blog Post 1 -->
+            <div class="col-md-4">
+                <div class="card blog-card mb-4">
+                    <img src="images/mvp1.jpeg" class="card-img-top" alt="Blog 1">
+                    <div class="card-body">
+                        <h5 class="card-title">MVP vs. MMP: How to Build and Scale a Successful Product</h5>
+                        <p class="card-text">Building an MVP isn’t the end—it’s just the beginning. The real challenge? Scaling it into an MMP.</p>
+                        <a href="blog1.html" class="btn btn-custom">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="col-md-4">
+                <div class="card blog-card mb-4">
+                    <img src="images/uiux21.jpeg" class="card-img-top" alt="Blog 2">
+                    <div class="card-body">
+                        <h5 class="card-title">UI/UX at Scale: How Design Drives Business Growth</h5>
+                        <p class="card-text">Great design isn’t just looks—it’s how a product grows. Learn how UI/UX drives business success."</p>
+                        <a href="blog2.html" class="btn btn-custom">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="col-md-4">
+                <div class="card blog-card mb-4">
+                    <img src="images/p1.jpeg" class="card-img-top" alt="Blog 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Scaling Web Apps with Python & Django</h5>
+                        <p class="card-text">Build fast, scalable web apps with Python & Django. See why they’re the best choice for full-stack development.</p>
+                        <a href="blog3.html" class="btn btn-custom">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
